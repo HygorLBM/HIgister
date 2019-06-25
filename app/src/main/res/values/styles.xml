@@ -51,12 +51,6 @@
         <item name="android:padding">@dimen/text_padding</item>
     </style>
 
-    <style name="Widget.Hint">
-        <item name="android:textSize">17sp</item>
-        <item name="android:textColor">@color/color_text</item>
-        <item name="android:textStyle">bold</item>
-    </style>
-
     <style name="AppBaseTheme" parent="@style/Theme.AppCompat.Light">
     </style>
 
@@ -95,7 +89,14 @@
         <item name="color">@color/drawerArrowColor</item>
     </style>
 
+    <!--Facebook without loader-->
+    <style name="FullyTranslucent" parent="android:Theme.Translucent.NoTitleBar">
+        <item name="android:progressBarStyle">@style/InvisibleProgress</item>
+    </style>
 
+    <style name="InvisibleProgress">
+        <item name="android:visibility">gone</item>
+    </style>
 
 </resources>
 
